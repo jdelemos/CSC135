@@ -14,17 +14,30 @@
 
 num = [1,2,3,4,5,6,7]
 
+
 def collapse(num):
+    tish = len(num)
+    print(num[tish -1])
+    print(tish)
+    even = len(num)%2
+    div = (len(num) -1) / 2 
+    other = slice(len((num))/2)
+    (num[::2])
     result = []
+    
+    for i in range(0,len(num)-1, 2):
+        result.append(num[i]+ num[i+1])
+    if even == 1: 
+        result.append(num[i-1])
+        
+    print(result)
+        
+    
 
-    for i in range(0, len(num)-1, 2):
-        result.append(num[i] + num[i+1])
 
-    if len(num) % 2 == 1:
-        result.append(num[-1])
-
-    return result
-
-num = [1, 2, 3, 4, 5, 6, 7]
-result = collapse(num)
-print(result)
+            
+            
+        
+        
+    
+collapse(num)
