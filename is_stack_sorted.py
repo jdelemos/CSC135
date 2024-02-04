@@ -8,6 +8,8 @@ num = [1]
 def is_stack_sorted(num):
     i = (len(num)) -1
     
+    if i == 1:
+        True 
     
    
     while num[i-1] >= num[i]:
