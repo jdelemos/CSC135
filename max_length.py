@@ -7,11 +7,10 @@ words=['xxx', 'yyyyy', 'ppppppp','ddddddddddddddddd']
 
 def max_length(words):
     greatest = 0
-    print(max(words))
     for word in words:
         if len(word) > greatest:
             greatest = len(word)
-            answer = word
+            answer = len(word)
            
     print(answer)
     
