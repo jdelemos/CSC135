@@ -1,0 +1,22 @@
+# Write a recursive function named star_string 
+# that accepts an integer parameter n and returns a 
+# string of stars (asterisks) 
+# 2n long (i.e., 2 to the nth power). For example: 
+
+#gotta say the lecture was pretty misleading. anywho
+#this actually isn't the CODESTEPBYSTEP proper solution
+#but I found it first try and does the same f'ing thing
+
+import math
+
+n = 5
+
+
+def star_string(n):
+    if n < 0:
+        return None  
+    else:
+        print("*" * (2**n) ) 
+        return star_string(n-1)
+        
+star_string(n)
