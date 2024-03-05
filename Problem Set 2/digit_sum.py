@@ -6,7 +6,7 @@ def stutter_list(s):
     x = g
     print(x)
     s.append(x)
-    return stutter_list(s)
+    return s
 
     
 stutter_list(s)
